@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: sans-serif;
+}
+.container {
+  
+    display: grid;
+    grid-template-areas:
+      'header2 header2 header2'
+      'header header header'
+      'main main main'
+      'item4 item4 item4'
+      ;
+}
+/*header*/
+.item1 { 
+        grid-area: header2; 
+        height: 40px;
+        background-color: #f5f5f5;   
+}
+.login{
+  color: black;
+}
+.item1 p{
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.item1 p1{
+  float: right;
+  margin-top: 10px;
+  margin-right: 500px;
+}
+/*HEADER*/
+.item2 { 
+  grid-area: header; 
+  height:70px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  margin-top: 30px;
+  width: 1516px;
+}
+.item2 p1{
+  float: right;
+  margin-right: 6%;
+  font-size: 24px;
+  margin-top: -21px;
+  color: #d2b7b7;
+}
+.item2 p2{
+  float: right;
+  margin-right: 5%;
+  font-size: 20px;
+  margin-top: -21px;
+  color: #d2b7b7;
+}
+
+.box {
+  margin-left: 230px;
+  height: 40px;
+  margin-top: -16px;
+  position: absolute;
+  left: 60%;
+  transform: translate(-50%,-50%);
+  background: #303235;
+  border-radius: 50px;
+  padding: 10px;
+  }
+.sbutton {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #DADADA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.stext {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #d2b7b7;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+.sbox:hover > .stext {
+  width: 180px;
+  padding: 0 5px;
+  border-radius: 50px;
+  }
+  .sbox:hover > .sbutton {
+  background: #fff;
+  }
+  
+  .fa-search {
+  color: #001EFF;
+  }
+#menu{
+  margin-top: -25px;
+  font-weight: bold;
+}
+#menu ul {
+  list-style-type: none;
+  text-align: center;
+  
+}
+#menu ul li{
+    display: inline-table;
+    width: 100px;
+    position: relative;
+    height: 20px;
+    line-height: 30px;
+}
+#menu ul li a{
+  text-decoration: none;
+  color: rgb(62, 17, 17);
+  display: block;
+}
+#menu ul li a:hover{
+  background-color: rgb(226, 232, 238);
+  color: rgb(57, 52, 52);
+}
+#menu ul li > .sub-menu{
+  display: none;
+}
+#menu ul li:hover .sub-menu{
+  display: block;
+  position: absolute;
+}
+/*main*/
+.item3 { grid-area: main;
+
+}
+.giay img:hover{
+  border: 2px solid black;
+}
+.women > img:hover  {
+  border: 2px black solid;
+}
+.women {
+  margin-left: 60px;
+  float: left;
+}
+.men{
+  margin-left: 60px;
+  float: left;
+}
+.men > img:hover  {
+  border: 2px black solid;
+}
+.kid{
+  float: left;
+  margin-left: 60px;
+}
+.kid > img:hover  {
+  border: 2px black solid;
+}
+/*footer*/
+
+.item4{
+  grid-area: item4 ;
+  color: white;
+  background-color: #303235;
+  width: 1516px;
+  height: 50px;
+}
+.vitri{
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.copy{
+  text-align: center;
+  margin-top: 20px;
+  color: #5e5f62;
+}
+.face{
+  font-size: 30px;
+  float: right;
+  margin-top: -25px;
+  margin-right: 40px;
+  color: #DADADA;
+}
+.ins{
+  font-size: 30px;
+  margin-top: -25px;
+  float: right;
+  margin-right: 20px;
+  color: #DADADA;
+}
+/*list*/
+.space{
+  margin-top: 20px;
+  width: 1516px;
+  height: 100px;
+  background-color: #edeef1;
+}
+.menuu{
+  height: 70px;
+  margin-top: -25px;  
+}
+.menuu .listmenuu {
+  margin-top: 40px;
+}
+.menuu ul {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.menuu ul li{
+  list-style-type: none;
+  margin-left: 15px;
+}
+.menuu ul li a{
+  text-decoration: none;
+  margin-left: 30px;
+  color: #000000;
+}
+.menuu ul li:hover{
+  border-right: 2px solid black;
+  font-weight: bold;
+}
+.product{
+  margin-right: 30px;
+  margin-left: 160px;
+}
+
+.item41{
+  color: white;
+  background-color: #303235;
+  width: 1519px;
+  height: 50px;
+}
+.item41 .copyy{
+  text-align: center;
+  color: #5e5f62;
+}
+.facee{
+  font-size: 30px;
+  float: right;
+  margin-top: -10px;
+  margin-right: 40px;
+  color: #DADADA;
+}
+.inss{
+  font-size: 30px;
+  float: right;
+  margin-top: -10px;  
+  margin-right: 20px;
+  color: #DADADA;
+}
+.productt img{
+  margin-left: 8px;
+}
+.productt img:hover{
+  border: 2px solid black;
+}
